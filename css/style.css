@@ -119,8 +119,6 @@ padding-right: 267px;
 }
 
 
-
-
 /*검색 폼*/
 .search-form a {
   position: relative;
@@ -158,6 +156,7 @@ padding-right: 267px;
   -webkit-transform: rotate(30deg);
   transform: rotate(30deg);
 }
+
 
 .search-form a:focus {
   width: 180px;
@@ -198,9 +197,12 @@ padding-right: 267px;
   transition-timing-function: cubic-bezier(1, -0.28, 0, 0.9);
 }
 
-
-
-
+.search-form a:hover{
+  border: 3px solid #9e8169c2;
+}
+.search-form a::before:hover{
+   background: #9e8169c2;
+}
 
 /* 섹션 1 */
 #section1 {

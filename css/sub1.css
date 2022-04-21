@@ -184,13 +184,13 @@ h1 {
 /* 섹션 2 */
 #section2 {
   width: 100%;
-  height: 470px;
+  height: 440px;
   background-color: #fdfdf6;
 }
 
 .s2_inner {
   margin: auto;
-  padding: 76px 0;
+  padding: 67px 0;
   width: 300px;
   text-align: center;
   box-sizing: border-box;
@@ -229,7 +229,7 @@ h1 {
 /* 섹션 3 */
 #section3{
 width: 1320px;
-height: 620px;
+height: 570px;
 margin: auto;
 }
 
@@ -239,7 +239,7 @@ margin: auto;
   width: 247px;
   height: 37px;
   padding: 10px 0 0 102px;
-  margin: 96px auto 0;
+  margin: 60px auto 0;
   background: url(../images/sub/sub1_s3_leafs1.png) no-repeat center top;
 }
 
@@ -302,8 +302,8 @@ color: #889355;
 
 .s3_btn a {
   position: absolute;
-  left: 51%;
-  bottom: 255px;
+  left: 50%;
+  bottom: -10px;
   transform: translate(-50%, -50%);
   width: 160px;
   height: 50px;
@@ -357,8 +357,9 @@ color: #889355;
 
 /* 섹션 4 */
 .page-container{
+  margin-top: 50px;
     width: 100%;
-    height: 600px;
+    height: 500px;
     background-color: #fdfdf6;
     display: flex;
     justify-content: center;

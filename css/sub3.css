@@ -503,11 +503,19 @@ padding: 57px 0;
   font-size: 12px;
 }
 
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}
+
 .new{
   position: absolute;
   top: 27px;
   left: 24px;
+  animation: blink-effect 1s step-end infinite;
 }
+/* 깜빡이는 효과 - Blink Effect */
 
 
 

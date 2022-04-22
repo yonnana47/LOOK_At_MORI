@@ -28,3 +28,24 @@ $(document).ready(function(){
 
 
  });
+
+
+//서브 3
+$('.show_img').show();//show 사진 보여주기
+  $(".hide_img").hide();//hide 사진 숨기기
+
+$('.show_img').click(function() {
+	//2000:2초,'slow','nomal','fast'
+    $(".hide_img").show('3000');
+		$(this).hide('fast')
+    // .show_img을 클릭하면 .hover_img를 보여줘라
+
+})
+
+$('.hide_img').click(function() {
+	//2000:2초,'slow','nomal','fast'
+    $(".show_img").show('3000');
+		$(this).hide('fast')
+    // .show_img을 클릭하면 .hover_img를 보여줘라
+
+})

@@ -1,351 +1,182 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #171717;
-  }
-  
-  body {
-    min-width: 1320px;
-    font-family: 'Pretendard';
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 24px;
-    color: #171717;
-  
-  }
-  
-  
-  /* 헤더 시작 */
-  #header.header-scrolled {
-    background: rgb(255, 255, 255);
-    transition: all 0.5s;
-  }
-  
-  #header {
-    position: fixed;
-    height: 80px;
-    z-index: 99;
-    width: 100%;
-  }
-  
-  #header:hover {
-    background: rgb(255, 255, 255);
-  }
-  
-  .header_inner {
-    width: 1140px;
-    height: 80px;
-    margin: auto;
-    text-align: center;
-  }
-  
-  .header_inner li {
-    float: left;
-  }
-  
-  .header_inner li:nth-child(-n+3),
-  .header_inner li:nth-child(n+5) {
-    padding: 34px 0 0 74px;
-  
-  }
-  
-  .header_inner a {
-    font-size: 15px;
-  }
-  
-  h1 {
-    padding: 26px 0 0 81px;
-  }
-  
-  .header_inner a:nth-child(-n+3):hover,
-  .header_inner a:nth-child(n+5):hover {
-    color: #B6A58E;
-  
-  }
-  
-  /* 헤더 슬라이더 */
-  .submenu_wrap {
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    height: 100px;
-  }
-  
-  .submenu_inner {
-    position: relative;
-    margin: auto;
-    text-align: left;
-    width: 1140px;
-    height: 100px;
-  
-  }
-  
-  .submenu_inner ul {
-    float: left;
-    width: 140px;
-  }
-  
-  .sub_left {
-    position: absolute;
-    left: 74px;
-  }
-  
-  .sub_left ul:nth-child(1) {
-    width: 115px;
-  }
-  
-  .sub_left ul:nth-child(2) {
-    width: 153px;
-  }
-  
-  .sub_right {
-    position: absolute;
-    right: 100px;
-  }
-  
-  .submenu ul li a {
-    color: #796d60;
-  }
-  
-  .submenu li a:hover {
-    color: #B6A58E;
-  }
+<!DOCTYPE html>
+<html lang="ko">
 
-  
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1320">
+	<title>LOOK At MORI</title>
 
-/* 섹션1 */
-.sub5_title{
-    margin: auto;
-    width: 1200px;
-    height: 200px;
-    padding: 150px 0 0 35px;
-    box-sizing: border-box;
-    font-size: 30px;
-    border-bottom: 1px solid #6666;
-}
+	<!-- 파비콘 -->
+	<link rel="icon" type="image/png" sizes="32x32" href="../images/main/favicon.png">
+
+	<!-- css  -->
+	<link href="../css/sub5.css" rel="stylesheet" type="text/css">
+
+	<!-- 제이쿼리 -->
+	<script src="../js/jquery-1.12.4.min.js"></script>
+
+	<!-- 헤더 제이쿼리: 마우스 스크롤하면 헤더 바탕 전환 & 서브 내려오게 하기 -->
+	<script src="../js/main.js"></script>
+
+	<!-- 헤더 검색폼 -->
+	<link rel="stylesheet" href="../css/search_form.css">
+
+	<link href="../css/like_button.css" rel="stylesheet">
 
 
-#section1{
-    width: 100%;
-    background-color: #FBFBFB ;
-    margin-top: 40px;
-}
+	<!-- <<폰트 ↓>> -->
+	<!-- 내용; 프리텐다드 -->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 
-.s1_inner{
-    margin: auto;
-    background: url(../images/sub/sub5_s1_bg.png) no-repeat center 160px;
-    height: 1112px;
-    color: #4A614F;
-    text-align: center;
-    position: relative;
-}
+	<!-- 메인 영어; Source Sans Pro-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+		rel="stylesheet">
 
-.s1_inner p:nth-child(1){
-    width: 150px;
-    font-size: 18px;
-    border-top: 2px solid #4A614F;
-    border-bottom: 2px solid #4A614F;
-    position: absolute;
-    top: 47%;
-    left: 46.3%;
-    padding: 5px 0;
-}
+	<!-- 메인 한국어; Noto Serif Korean -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700&display=swap"
+		rel="stylesheet">
 
-.s1_inner p:nth-child(2){
-    font-size: 50px;
-    position: absolute;
-    top: 53%;
-    left: 44.3%;
-    width: 240px;
-    line-height: 60px;
-    font-weight: 700;
-}
+	<!-- 포인트 영어; Lora -->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+	</style>
+</head>
 
+<body>
+	
+	<div id="header">
+		<!-- 헤더 전체 -->
+		<div class="header_inner">
+			<ul>
+				<li><a href="../sub/sub1.html">MORI</a></li>
+				<li><a href="../sub/sub2.html">YOUR DAYS</a></li>
+				<li><a href="../sub/sub3.html">PRODUCTS</a></li>
+                <li>
+					<h1><a href="../index.html"><img src="../images/main/header_logo_bk.png" alt="헤더로고_블랙"></a></h1>
+				</li>
+				<li><a href="../sub/sub5.html">ARCHIVE</a></li>
+				<li><a href="../sub/sub4.html">COMMUNITY</a></li>
+				<li class="search-form">
+					<!-- 검색 아이콘 -->
+					<a href="#"></a>
+				</li>
+			</ul>
 
-/* 섹션2 */
-#section2{
-    width: 100%;
-    background-color: #A0AB7A;
-   height: 428px;
-   text-align: center;
-   color: #ffff;
-}
+		</div>
 
-.s2_inner{
-    width: 1320px;
-    margin: auto;
-    padding: 114px 0;
-    box-sizing: border-box;}
+		<div class="submenu_wrap">
+			<!--서브메뉴-->
+			<div class="submenu">
+				<div class="submenu_inner">
+					<div class="sub_left">
+						<ul>
+							<li><a href="../sub/sub1.html">BRAND</a></li>
+						</ul>
+						<ul>
+							<li><a href="../sub/sub2.html">NEW PRODUCT</a></li>
+						</ul>
+						<ul>
+							<li><a href="../sub/sub3.html">STORE</a></li>
+						</ul>
+					</div>
+					<div class="sub_right">
+						<ul>
+							<li><a href="../sub/sub5.html">EVENT</a></li>
+						</ul>
+						<ul>
+							<li><a href="../sub/sub4.html #section2">FAQ</a></li>
+							<li><a href="../sub/sub4.html #section3">찾아오시는길</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--서브메뉴-->
+	</div> 
 
-.s2_explan{
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 30px;
-}
-
-.s2_bold {
-    padding-top: 20px;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 45px;
-}
-
-.s2_bold b{
-    color: #FFF831;
-}
-
-/* 섹션3 */
-#section3{
-    width: 1320px;
-    height: 1100px;
-    margin: 130px auto 0;
-    background: url(../images/sub/sub5_s3.png) no-repeat center 50%;
-    text-align: center;
-}
-
-.s3_text p:nth-child(1){
-    color: #544533;
-    font-size: 46px;
-    font-weight: 600;
-    padding-bottom: 40px;
-}
-
-.s3_text p:nth-child(2){
-    color: #544533;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 45px;
-}
-
-/* 버튼 */
-button {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  outline: none;
-  border: 0;
-  vertical-align: middle;
-  text-decoration: none;
-  font-size: inherit;
-  font-family: inherit;
-}
-button.learn-more {
-    margin: 785px 0 0 0;
-    font-weight: 600;
-    font-size: 20px;
-    text-transform: uppercase;
-    padding: 11px 21px;
-    background: #cfc1ad;
-    border: 2px solid #544533;
-    border-radius: 19px;
-    transform-style: preserve-3d;
-    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
-}
-
-button.learn-more::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 85%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #96887b;
-  border-radius: inherit;
-  box-shadow: 0 0 0 2px #544533, 0 0.625em 0 0 #e6e6e6;
-  transform: translate3d(0, 0.75em, -1em);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-}
-button.learn-more:hover {
-  background: #ebe3da;
-  transform: translate(0, 0.25em);
-}
-button.learn-more:hover::before {
-  box-shadow: 0 0 0 2px #544533, 0 0.5em 0 0 #c5c5c5;
-  transform: translate3d(0, 0.5em, -1em);
-}
-button.learn-more:active {
-  background: #ebe3da;
-  transform: translate(0em, 0.75em);
-}
-button.learn-more:active::before {
-  box-shadow: 0 0 0 2px #544533, 0 0 #c5c5c5;
-  transform: translate3d(0, 0, -1em);
-}
-
-button.learn-more a{
-    color: #fff
-}
-
-
-button.learn-more a:hover{
-   color: #544533;
-}
-
-
-
-
-
-
-
-
-
-
-  
-  /* 푸터 */
-  #footer {
-      margin-top: 30px;
-      border-top: 1px solid #ededed;
-      text-align: center;
-    }
     
-    .footer_inner {
-      width: 1320px;
-      height: 138px;
-      margin: auto;
-      padding: 30px 0 0 40px;
-      box-sizing: border-box;
-    }
-    
-    .footer_left {
-      width: 529px;
-      float: left;
-    }
-    
-    .footer_left li {
-      float: left;
-      padding: 11px 0px 30px 40px;
-    }
-    
-    .footer_logo {
-      width: 142px;
-      float: left;
-    }
-    
-    .footer_left li a {
-      font-size: 12px;
-      font-weight: 600;
-    }
-    
-    .sns {
-      width: 260px;
-      float: right;
-    }
-    
-    .sns li {
-      float: left;
-      padding: 13px 0 50px 30px;
-      opacity: 0.4;
-    }
-    
-    .sns li:hover {
-      opacity: 0.8;
-    }
+<div class="sub5_title">
+<p>EVENT.</p>
+</div>
+
+<div id="section1"><!-- 섹션1 -->
+    <div class="s1_inner">
+        <p>Clean Beaty Life</p>
+        <p>룩앳모리의  공병 재활용 캠페인</p>
+    </div>
+</div>
+
+
+<div id="section2"> <!-- 섹션2 -->
+    <div class="s2_inner">
+    <div class="s2_explan">
+    <p>클린 뷰티 라이프를 꿈꾸는 룩앳모리는<br>
+        재활용이 가능한 용기 및 친환경 부자재 사용을 지향하며,<br>
+        공병 재황용을 통해 지속 가능한 환경을 만들기 위한 캠페인을 진행합니다.
+    </p>
+</div>
+<div class="s2_bold">
+    <p>룩앳모리 공병 재활용 캠페인에 참여하시면 <br>
+    <b>원하시는 제품 1개</b>를 드립니다.
+        </p>
+    </div>
+</div>
+</div>
+
+
+<div id="section3"> <!-- 섹션3 -->
+    <div class="s3_text">
+        <p>어떻게 캠페인에 참여할 수 있나요?</p>
+        <p><b>사용 완료한 공병 5개</b>를 모아 보내주시면,<br>
+            제품 1개를 무료로 제공니다.</p>
+    </div>
+    <button class="learn-more"><a href="../sub/sub1.html #section4">참여하기</a></button>
+
+</div>
+
+
+
+
+	<div id="footer">
+		<!-- 푸터-->
+		<div class="footer_inner">
+			<div class="footer_left">
+				<ul>
+					<li><a href="../sub/sub1.html">ABOUT</a></li>
+					<li><a href="../sub/sub3.html">PRODUCT</a></li>
+					<li><a href="#">EVENT</a></li>
+					<li><a href="../sub/sub4.html">ACCOUNT</a></li>
+				</ul>
+			</div>
+
+			<div class="footer_logo">
+				<a href="../index.html"><img src="../images/main/header_logo_bk.png" alt="푸터_로고"></a>
+			</div>
+
+			<div class="sns">
+				<ul>
+					<li><a href="https://www.instagram.com/"><img src="../images/main/footer_insta.png" alt="인스타그램"></a>
+					</li>
+					<li><a href="https://ko-kr.facebook.com/"><img src="../images/main/footer_facebook.png"
+								alt="페이스북"></a></li>
+					<li><a href="https://twitter.com/?lang=ko"><img src="../images/main/footer_twitter.png"
+								alt="트위터"></a></li>
+					<li><a href="https://www.youtube.com/"><img src="../images/main/footer_youtube.png" alt="유튜브"></a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+
+</body>
+
+</html>

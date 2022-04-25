@@ -1,504 +1,260 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #171717;
-}
-
-body {
-  min-width: 1320px;
-  font-family: 'Pretendard';
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 24px;
-  color: #171717;
-
-}
-
-
-/* 헤더 시작 */
-#header.header-scrolled {
-  background: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-#header {
-  position: fixed;
-  height: 80px;
-  z-index: 99;
-  width: 100%;
-}
-
-#header:hover {
-  background: rgb(255, 255, 255);
-}
-
-.header_inner {
-  width: 1140px;
-  height: 80px;
-  margin: auto;
-  text-align: center;
-}
-
-.header_inner li {
-  float: left;
-}
-
-.header_inner li:nth-child(-n+3),
-.header_inner li:nth-child(n+5) {
-  padding: 34px 0 0 74px;
-
-}
-
-.header_inner a {
-  font-size: 15px;
-}
-
-h1 {
-  padding: 26px 0 0 81px;
-}
-
-.header_inner a:nth-child(-n+3):hover,
-.header_inner a:nth-child(n+5):hover {
-  color: #B6A58E;
-
-}
-
-/* 헤더 슬라이더 */
-.submenu_wrap {
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-  height: 100px;
-}
-
-.submenu_inner {
-  position: relative;
-  margin: auto;
-  text-align: left;
-  width: 1140px;
-  height: 100px;
-
-}
-
-.submenu_inner ul {
-  float: left;
-  width: 140px;
-}
-
-.sub_left {
-  position: absolute;
-  left: 74px;
-}
-
-.sub_left ul:nth-child(1) {
-  width: 115px;
-}
-
-.sub_left ul:nth-child(2) {
-  width: 153px;
-}
-
-.sub_right {
-  position: absolute;
-  right: 100px;
-}
-
-.submenu ul li a {
-  color: #796d60;
-}
-
-.submenu li a:hover {
-  color: #B6A58E;
-}
-
-
-
-
-/* 섹션1 */
-#section1 {
-  position: relative;
-  margin:  auto;
-  width: 1320px;
-  height: 840px;
-  padding: 127px 0 0 0;
-  box-sizing: border-box;
-}
-
-.s1_text_img{
-  width: 1320px;
-}
-
-.s1_text {
-  float: left;
-  width: 153px;
-}
-
-.s1_img {
-  position: relative;
-  float: right;
-  width: 800px;
-  display: block;
-}
-
-.s1_title {
-  font-size: 30px;
-  font-family: 'Noto Serif KR', serif;
-  padding-bottom: 28px;
-}
-
-.s1_explan {
-  line-height: 20px;
-  font-weight: 400;
-  padding-bottom: 10px;
-}
-
-.s1_en {
-  font-family: 'Lora', serif;
-  color: #BEBEBE;
-  font-size: 13px;
-  padding-bottom: 20px;
-}
-
-.s1_text a {
-  padding-left: 1px;
-}
-
-.s1_leaf {
-  position: absolute;
-  width: 100%;
- bottom: 70px;
- left: 400px;
-  
-}
-
-
-
-
-/* 섹션 2 */
-#section2 {
-  width: 100%;
-  height: 440px;
-  background-color: #fdfdf6;
-}
-
-.s2_inner {
-  margin: auto;
-  padding: 67px 0;
-  width: 300px;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.s2_title {
-  padding-top: 30px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 22px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: #494949;
-}
-
-.s2_subtitle {
-  font-size: 12px;
-  font-weight: 400;
-  color: #494949;
-}
-
-.s2_speech {
-  font-family: 'Noto Serif KR', serif;
-  font-size: 17px;
-  padding: 28px 0 35px 0;
-  font-weight: 400;
-}
-
-.section2 b {
-  font-weight: 600;
-  color: #8a715a;
-}
-
-
-
-
-/* 섹션 3 */
-#section3{
-width: 1320px;
-height: 570px;
-margin: auto;
-}
-
-.s3_title{
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
-  width: 247px;
-  height: 37px;
-  padding: 10px 0 0 102px;
-  margin: 60px auto 0;
-  background: url(../images/sub/sub1_s3_leafs1.png) no-repeat center top;
-}
-
-.s3_inner{
-  margin: auto;
-  padding: 70px 75px 0 100px;
-}
-
-.s3_inner ul{
-  float: left;
-  width: 33.33%;;
-  padding-top: 269px;
-}
-
-.s3_left{
-  background: url(../images/sub/sub1_s3_left.png) no-repeat 10px 0;
-}
-
-.s3_center{
-  background: url(../images/sub/sub1_s3_ceter.png) no-repeat 10px 0;
-}
-
-.s3_right{
-  background: url(../images/sub/sub1_s3_right.png) no-repeat 10px 0;
-}
-
-.s3_inner li{
-  padding-left: 15px;
-}
-
-.s3_subtitle{
-  font-family:  'Lora', serif;
-  font-size: 21px;
-  color: #A37D5A;
-}
-
-.s3_explan{
- font-family: 'Noto Serif KR', serif;
- font-size: 15px;
- color: #494949;
-}
-
-.s3_explan b{
-color: #889355;
-}
-
-.s3_leaf {
-  position: relative;
-  width: 1133px;
-  margin: auto;
- 
-}
-
-.s3_small{
-  font-size: 12px;
-  color: #494949;
-  line-height: 18px;
-  padding-top: 15px;
-}
-
-.s3_btn a {
-  position: absolute;
-  left: 50%;
-  bottom: -10px;
-  transform: translate(-50%, -50%);
-  width: 160px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 20px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  background: #ccc;
-}
-
-.s3_btn a:before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background: #A37D5A;
-  color: #fff;
-  transition: 0.5s;
-  transform-origin: bottom;
-  transform: translatey(-100%) rotatex(90deg);
-}
-
-.s3_btn a:hover:before {
-  transform: translatey(0) rotatex(0deg);
-}
-
-.s3_btn a:after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background: #8b6c4e;
-  color: #fff;
-  transition: 0.5s;
-  transform-origin: top;
-  transform: translatey(0) rotatex(0deg);
-}
-
-.s3_btn a:hover:after {
-  transform: translatey(100%) rotatex(90deg);
-}
-
-
-/* 섹션 4 */
-.page-container{
-  margin-top: 50px;
-    width: 100%;
-    height: 500px;
-    background-color: #fdfdf6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.login-form-container{
-    width:860px;
-    height: 540px;
-    display: flex;
-    flex-direction: row;
-    border-radius: 10px;
-
-}
-
-.login-form-left-side{
-    width: 50%;
-    border-radius: 0px 10px 10px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-}
-.login-form-left-side .login-top-wrap{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width:100%;
-}
-.login-form-left-side .login-top-wrap span{
- color: #583E20;
-    font-size: 20px;
-    padding-right: 34%;
-
-}
-
-.login-input-container{
-    padding-top: 70px;
-    width:300px;
-}
-.login-input-container .login-input-wrap{
-    width:300px;
-    height: 45px;
-    margin-top: 20px;
-    border-radius: 2px;
-    border-bottom: solid 2px #583E20;
-   
-}
-.login-input-container .login-input-wrap i{
-    color: #583E20;
-    line-height: 45px;
-}
-
-.login-input-container .login-input-wrap input{
-    background: none;
-    border: none;
-    line-height: 45px;
-    padding-left:10px;
-    width:267px;
-}
-.login-input-container .login-input-wrap input:focus{
-    outline: none;
-}
-.login-btn-wrap{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;;
-}
-.login-btn-wrap .login-btn{
-    width:95px;
-    height:35px;
-    color:white;
-    border: 0;
-    border-radius: 4px;
-
-    background: #583E20;
-    background: linear-gradient(162deg, #866e52 0%, #7a5e3d 50%, #583E20 100%);
-}
-
-.login-btn-wrap a{
-    margin-top:10px;
-    text-decoration: none;
-    font-size: 11px;
-    color: gray;
-}
-
-.s4_leaf{
-  width: 1133px;
-  margin: auto;
-}
-
-/* 푸터 */
-#footer {
-    margin-top: 30px;
-    border-top: 1px solid #ededed;
-    text-align: center;
-  }
-  
-  .footer_inner {
-    width: 1320px;
-    height: 138px;
-    margin: auto;
-    padding: 30px 0 0 40px;
-    box-sizing: border-box;
-  }
-  
-  .footer_left {
-    width: 529px;
-    float: left;
-  }
-  
-  .footer_left li {
-    float: left;
-    padding: 11px 0px 30px 40px;
-  }
-  
-  .footer_logo {
-    width: 142px;
-    float: left;
-  }
-  
-  .footer_left li a {
-    font-size: 12px;
-    font-weight: 600;
-  }
-  
-  .sns {
-    width: 260px;
-    float: right;
-  }
-  
-  .sns li {
-    float: left;
-    padding: 13px 0 50px 30px;
-    opacity: 0.4;
-  }
-  
-  .sns li:hover {
-    opacity: 0.8;
-  }
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1320">
+	<title>LOOK At MORI</title>
+
+	<!-- 파비콘 -->
+	<link rel="icon" type="image/png" sizes="32x32" href="../images/main/favicon.png">
+
+	<!-- css  -->
+	<link href="../css/sub1.css" rel="stylesheet" type="text/css">
+
+	<!-- 제이쿼리 -->
+	<script src="../js/jquery-1.12.4.min.js"></script>
+
+	<!-- 헤더 제이쿼리: 마우스 스크롤하면 헤더 바탕 전환 & 서브 내려오게 하기 -->
+	<script src="../js/main.js"></script>
+
+	<!-- 헤더 검색폼 -->
+	<link rel="stylesheet" href="../css/search_form.css">
+
+
+	<!-- <<폰트 ↓>> -->
+	<!-- 내용; 프리텐다드 -->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+
+	<!-- 메인 영어; Source Sans Pro-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+		rel="stylesheet">
+
+	<!-- 메인 한국어; Noto Serif Korean -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- 포인트 영어; Lora -->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+	</style>
+</head>
+
+<body>
+	<div id="header">
+		<!-- 헤더 전체 -->
+<hr>
+		<div class="header_inner">
+			<ul>
+				<li><a href="../sub/sub1.html">MORI</a></li>
+				<li><a href="../sub/sub2.html">YOUR DAYS</a></li>
+				<li><a href="../sub/sub3.html">PRODUCTS</a></li>
+				<li>
+					<h1><a href="../index.html"><img src="../images/main/header_logo_bk.png" alt="헤더로고_블랙"></a></h1>
+				</li>
+				<li><a href="../sub/sub5.html">ARCHIVE</a></li>
+				<li><a href="../sub/sub4.html">COMMUNITY</a></li>
+				<li class="search-form">
+					<!-- 검색 아이콘 -->
+					<a href="#"></a>
+				</li>
+			</ul>
+		</div>
+		<div class="submenu_wrap">
+			<!--서브메뉴-->
+			<div class="submenu">
+				<div class="submenu_inner">
+					<div class="sub_left">
+						<ul>
+							<li><a href="../sub/sub1.html">BRAND</a></li>
+						</ul>
+						<ul>
+							<li><a href="../sub/sub2.html">NEW PRODUCT</a></li>
+						</ul>
+						<ul>
+							<li><a href="../sub/sub3.html">STORE</a></li>
+						</ul>
+					</div>
+					<div class="sub_right">
+						<ul>
+							<li><a href="../sub/sub5.html">EVENT</a></li>
+						</ul>
+						<ul>
+							<li><a href="../sub/sub4.html #section2">FAQ</a></li>
+							<li><a href="../sub/sub4.html #section3">찾아오시는길</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--서브메뉴-->
+	</div>
+
+
+	<div id="section1">
+		<!-- 섹션 1 -->
+		<div class="s1_text_img">
+			<div class="s1_text">
+				<p class="s1_title">숲을 담다</p>
+				<p class="s1_explan">모리와 함께하는 비건라이프
+					지금 바로 시작해보세요.</p>
+				<p class="s1_en">WITH THE FOREST</p>
+				<a href="#"><img src="../images/sub/sub1_s1_iconright.png" alt="화살표"></a>
+			</div>
+			<div class="s1_img">
+				<img src="../images/sub/sub1_s1.png" alt="섹션1_들판소녀">
+			</div>
+		</div>
+		<div class="s1_leaf">
+			<img src="../images/sub/sub1_s1_leafs.png" alt="섹션1_잎들">
+		</div>
+	</div>
+
+
+	<div id="section2">
+		<!-- 섹션  2-->
+		<div class="s2_inner">
+			<div class="symbol"><img src="../images/sub/sub1_s2_symbollogo.png" lt="심볼로고"></div>
+			<p class="s2_title">LOOK At MORI</p>
+			<p class="s2_subtitle">NATURAL COSMETIC</p>
+			<p class="s2_speech">“자연에서 찾은 나만의 특별한 법칙”</p>
+			<p>룩앳모리는 단순 스킨케어 브랜드를 넘어<br>
+				당신의 라이프 스타일을 연구하며,<br>
+				당신의 일상에 <b>신선한 뷰티 제품</b>을 제공합니다. </p>
+		</div>
+	</div>
+
+	<div id="section3">
+		<!-- 섹션 3 -->
+		<div class="s3_title">
+			<p>BRAND MESSAGE</p>
+		</div>
+
+		<div class="s3_inner">
+			<ul class="s3_left">
+				<li class="s3_subtitle">
+					<p>Safety.</p>
+				</li>
+				<li class="s3_explan">
+					<p><b>동물 실험</b>을 하지 않고, <br>
+						자연 그대로의 <b>VEGAN</b> 원료만 사용하다.</p>
+				</li>
+				<li class="s3_small">
+					<p> 피부에 자극을 줄 수 있는 주의 성분은 최소화하고,<br>
+						피부 친화적이면서 안전한 자연의 성분만 담았습니다.
+
+					</p>
+				</li>
+			</ul>
+
+			<ul class="s3_center">
+				<li class="s3_subtitle">
+					<p>Fill.</p>
+				</li>
+				<li class="s3_explan">
+					<p>내 피부를 위한 <b>맞춤레시피</b></p>
+				</li>
+				<li class="s3_small">
+					<p>집에서 갓 만든 듯한 프레쉬하고 네츄럴한 텍스쳐를 느낄수 있습니다.</p>
+				</li>
+			</ul>
+
+			<ul class="s3_right">
+				<li class="s3_subtitle">
+					<p>Return.</p>
+				</li>
+				<li class="s3_explan">
+					<p>숲에게 <b>도움</b> 받은 만큼 숲에게 돌려주다.</p>
+				</li>
+				<li class="s3_small">
+					<p>룩앳모리가 숲에게 도움 받은 만큼, <br>
+						친환경 소재 패키징 사용을 통해 자연에게 돌려주겠습니다.</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="s3_leaf">
+		<img src="../images/sub/sub1_s3_leafs2.png" alt="섹션3_잎들">
+		<div class="s3_btn">
+			<a href="#section4" data-text="구독하기"></a>
+		</div>
+</div>
+
+
+		<div id="section4">
+
+			<div class="page-container">
+        <div class="login-form-container shadow">
+            <div class="login-form-left-side">
+                <div class="login-top-wrap">
+                    <span>JOIN THE MORI</span>
+                </div>
+                <div class="login-input-container">
+                    <div class="login-input-wrap input-id">
+                        <i class="far fa-envelope"></i>
+                        <input placeholder="Email" type="text">
+                    </div>
+                    <div class="login-input-wrap input-password">
+                        <i class="fas fa-key"></i>
+                        <input placeholder="Password"  type="password">
+                    </div>
+                </div>
+                <div class="login-btn-wrap">
+                    <button class="login-btn">Login</button>
+                    <a href="#" >Forgot password?</a>
+                </div>
+            </div>
+        </div>
+	  </div>
+		<div class="s4_leaf">
+		 <img src="../images/sub/sub1_s4_leafs.png" alt="섹션4_잎들">
+		</div>
+		</div>
+
+		</div>
+
+
+
+
+		<div id="footer">
+			<!-- 푸터-->
+			<div class="footer_inner">
+				<div class="footer_left">
+					<ul>
+						<li><a href="../sub/sub1.html">ABOUT</a></li>
+					<li><a href="../sub/sub3.html">PRODUCT</a></li>
+					<li><a href="../sub/sub5.html">EVENT</a></li>
+					<li><a href="../sub/sub4.html">ACCOUNT</a></li>
+					</ul>
+				</div>
+
+				<div class="footer_logo">
+					<a href="../index.html"><img src="../images/main/header_logo_bk.png" alt="푸터_로고"></a>
+				</div>
+
+				<div class="sns">
+					<ul>
+						<li><a href="https://www.instagram.com/"><img src="../images/main/footer_insta.png" alt="인스타그램"></a>
+						</li>
+						<li><a href="https://ko-kr.facebook.com/"><img src="../images/main/footer_facebook.png" alt="페이스북"></a></li>
+						<li><a href="https://twitter.com/?lang=ko"><img src="../images/main/footer_twitter.png" alt="트위터"></a></li>
+						<li><a href="https://www.youtube.com/"><img src="../images/main/footer_youtube.png" alt="유튜브"></a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+
+</body>
+
+</html>

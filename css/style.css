@@ -527,6 +527,16 @@ h1 {
 }
 
 
+.insta_img li img:last-child{display:none} 
+.insta_img li:hover img:first-child{display:none} 
+.insta_img li:hover img:last-child{display:inline-block}
+
+
+
+
+
+
+
 /* 푸터 */
 #footer {
     margin-top: 132px;

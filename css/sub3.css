@@ -1,399 +1,572 @@
-<!DOCTYPE html>
-<html lang="ko">
+* {
+  margin: 0;
+  padding: 0;
+}
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=1320">
-	<title>LOOK At MORI</title>
+li {
+  list-style: none;
+}
 
-	<!-- 파비콘 -->
-	<link rel="icon" type="image/png" sizes="32x32" href="../images/main/favicon.png">
+a {
+  text-decoration: none;
+  color: #171717;
+}
 
-	<!-- css  -->
-	<link href="../css/sub3.css" rel="stylesheet" type="text/css">
+body {
+  min-width: 1320px;
+  font-family: 'Pretendard';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #171717;
 
-	<!-- 제이쿼리 -->
-	<script src="../js/jquery-1.12.4.min.js"></script>
-
-	<!-- 헤더 제이쿼리: 마우스 스크롤하면 헤더 바탕 전환 & 서브 내려오게 하기 -->
-	<script src="../js/main.js"></script>
-
-	<!-- 헤더 검색폼 -->
-	<link rel="stylesheet" href="../css/search_form.css">
-
-
-	<!-- <<폰트 ↓>> -->
-	<!-- 내용; 프리텐다드 -->
-	<link rel="stylesheet" type="text/css"
-		href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
-
-	<!-- 메인 영어; Source Sans Pro-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
-		rel="stylesheet">
-
-	<!-- 메인 한국어; Noto Serif Korean -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700&display=swap"
-		rel="stylesheet">
-
-	<!-- 포인트 영어; Lora -->
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-	</style>
-</head>
-
-<body>
-	<div id="header">
-		<!-- 헤더 전체 -->
-		<div class="header_inner">
-			<ul>
-				<li><a href="../sub/sub1.html">MORI</a></li>
-				<li><a href="../sub/sub2.html">YOUR DAYS</a></li>
-				<li><a href="../sub/sub3.html">PRODUCTS</a></li>
-				<li>
-					<h1><a href="../index.html"><img src="../images/main/header_logo_wh.png" alt="헤더로고_화이트"></a></h1>
-				</li>
-				<li><a href="../sub/sub5.html">ARCHIVE</a></li>
-				<li><a href="../sub/sub4.html">COMMUNITY</a></li>
-				<li class="search-form">
-					<!-- 검색 아이콘 -->
-					<a href="#"></a>
-				</li>
-			</ul>
-
-		</div>
-
-		<div class="submenu_wrap">
-			<!--서브메뉴-->
-			<div class="submenu">
-				<div class="submenu_inner">
-					<div class="sub_left">
-						<ul>
-							<li><a href="../sub/sub1.html">BRAND</a></li>
-						</ul>
-						<ul>
-							<li><a href="../sub/sub2.html">NEW PRODUCT</a></li>
-						</ul>
-						<ul>
-							<li><a href="../sub/sub3.html">STORE</a></li>
-						</ul>
-					</div>
-					<div class="sub_right">
-						<ul>
-							<li><a href="../sub/sub5.html">EVENT</a></li>
-						</ul>
-						<ul>
-							<li><a href="../sub/sub4.html #section2">FAQ</a></li>
-							<li><a href="../sub/sub4.html #section3">찾아오시는길</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--서브메뉴-->
-	</div> <!-- 헤더 전체 -->
+}
 
 
-	<div id="section1">
-		<!-- 섹션1 -->
-		<div id="section1_inner">
-			<!--나무 아이콘 백그라운드-->
-			<div class="section1_left">
-				<!--맨 왼쪽-->
-				<a href="../sub/sub2.html"><img src="../images/sub/sub3_s1_left.png" alt="섹션1_왼쪽_신제품"></a>
-			</div>
+/* 헤더 시작 */
+#header.header-scrolled {
+  background-color: #1C1A09;
+  transition: all 0.5s;
+}
 
-			<div class="s1_right">
-				<div class="s1_right_left">
-					<div class="s1_big_title">
-						<p>THE LIGHT
-							WIYHIN
-							YOU</p>
-					</div>
-					<div class="s1_center_img">
-						<a href="#section3"><img src="../images/sub/sub3_s1_center.png" alt="섹션1_센터_여자"></a>
-						<div class="s1_center_title">
-							<img src="../images/sub/sub3_s1_roundfont.png" alt="섹션1_센터_라운드타이틀">
-							<!-- <div><img src="../images/sub/sub3_s1_22icon.png" alt=""></div> -->
-						</div>
-					</div>
-				</div>
+/* 헤더 시작 */
+#header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
 
-				<div class="s1_right_right">
-					<div class="s1_rr_text">
-						<!-- 화살표 백그라운드  -->
-						<p><i>NEXT</i><br>
-							Moisture to the skin</p>
-						<div class="right_icon"><a href="#section3"><img src="../images/sub/sub3_s1_righticon.png"
-									alt="오른쪽화살표"></a></div>
-					</div>
-					<div class="s1_rr_img">
-						<a href="#section3"><img src="../images/sub/sub3_s1_bubble_icon.png" alt="섹션1_버블"></a>
-						<!--백그라운드_풀든여자-->
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+#header:hover {
+  background-color: #1C1A09;
+}
 
-	<!-- 섹션 2 -->
-	<div id="section2">
-		<div class="s2_symbol"><img src="../images/sub/sub3_s2_symbol_logo.png" alt="심볼로고"></div>
-		<hr class="hr_top">
-		<p class="s2_title">피부 고민 맞춤형 솔루션을 제안합니다.</p>
-		<hr class="hr_center">
+.header_inner {
+  width: 1140px;
+  height: 80px;
+  margin: auto;
+  text-align: center;
+}
 
-		<div class="s2_text">
-			<!--내용-->
-			<div class="s2_left"><img src="../images/sub/sub3_s2_left.png" alt="섹션2_왼쪽"></div>
+.header_inner li {
+  float: left;
+}
 
-			<div class="s2_center">
-				<p>365일, 당신의 매일을 보다 특별하게</p>
-				<p>One and Only</p>
-				<p>건강하고 오래 지속되는 아름다움을 지향하는 룩앳모리는<br>
-					하나뿐인 당신의 하나뿐인 피부를 위한 평생의 동반자이자 주치의입니다.</p>
-			</div>
+.header_inner li:nth-child(-n+3), .header_inner li:nth-child(5), .header_inner li:nth-child(6) {
+  padding: 34px 0 0 74px;}
 
-			<div class="s2_right">
-				<div class="show_img"><img src="../images/sub/sub3_s2_right.png" alt="섹션2_오른쪽"></div>
-				<div class="hide_img"><img src="../images/sub/sub3_s2_right_hover.png" alt="호버이미지"></div>
-			</div>
-		</div>
-		<hr class="hr_top">
-	</div>
-	<script src="../js/main.js"></script>
+.header_inner a {
+  font-size: 15px;
+   color: #EEEEEE;
+}
+
+.search-form{
+  padding: 34px 0 0 18px;
+}
+
+h1 {
+  padding: 26px 0 0 81px;
+}
+
+.header_inner a:nth-child(-n+3):hover,
+.header_inner a:nth-child(n+5):hover {
+  color: #b1a395;
+
+}
 
 
 
-
-	<div id="section3">
-		<!-- 섹션 3 -->
-		<div class="s3_title"><img src="../images/sub/sub3_s3_Catalog.png" alt="카타로그"></div>
-
-		<div id="section3_left">
-			<div class="faq-content"> <!--리스트 1-->
-				<button class="question" id="que-1"><span class="filters_text">Filters</span><span
-						id="que-1-toggle">+</span></button>
-				<div class="answer" id="ans-1">
-
-					<div class="category1">
-						<div class="category_text">
-							<p>Category</p>
-							<p>제품 유형별</p>
-						</div>
-
-						<div class="category_check">
-							<label class="checkbox_container">
-								Cleanser
-								<input type="checkbox" checked="checked">
-								<span class="checkbox_mark"></span>
-							</label>
-
-							<label class="checkbox_container">
-								Serum
-								<input type="checkbox" checked="checked">
-								<span class="checkbox_mark"></span>
-							</label>
-
-							<label class="checkbox_container">
-								Face Cream
-								<input type="checkbox">
-								<span class="checkbox_mark"></span>
-							</label>
-						</div>
-					</div>
-				</div>
-			</div> <!--리스트 1 :숨김, 보임 효과-->
+/* 헤더 슬라이더 */
+.submenu_wrap {
+  width: 100%;
+ background-color: #1C1A09;
+  height: 100px;
+}
 
 
-			<div class="category2"> <!--리스트 2-->
-				<div class="category_text">
-					<p>Skin thpe</p>
-					<p>피부타입별</p>
-				</div>
+.submenu_inner {
+  position: relative;
+  margin: auto;
+  text-align: left;
+  width: 1140px;
+  height: 100px;
 
-				<div class="category_check">
-					<label class="checkbox_container">
-						Dry
-						<input type="checkbox" checked="checked">
-						<span class="checkbox_mark"></span>
-					</label>
+}
 
-					<label class="checkbox_container">
-						Normal
-						<input type="checkbox" checked="checked">
-						<span class="checkbox_mark"></span>
-					</label>
+.submenu_inner ul {
+  float: left;
+  width: 140px;
+}
 
-					<label class="checkbox_container">
-						Oily
-						<input type="checkbox">
-						<span class="checkbox_mark"></span>
-					</label>
+.sub_left {
+  position: absolute;
+  left: 74px;
+}
 
-					<label class="checkbox_container">
-						Combination
-						<input type="checkbox">
-						<span class="checkbox_mark"></span>
-					</label>
-				</div>
-			</div><!-- 리스트 2 -->
-		
+.sub_left ul:nth-child(1) {
+  width: 115px;
+}
 
-		
-		</div>
-		
+.sub_left ul:nth-child(2) {
+  width: 153px;
+}
+
+.sub_right {
+  position: absolute;
+  right: 100px;
+}
+
+.submenu ul li a {
+  color: #796d60;
+}
+
+.submenu li a:hover {
+  color: #b1a395;
+}
 
 
+/* 섹션 1 */
+#section1{
+  width: 100%;
+  height: 900px;
+  background-color: #1C1A09;
+  color: #EEEEEE;
+  font-family: 'Lora', serif;
+}
 
-		<!--섹션 3 왼쪽-->
-	
-		<div id="section3_right"> <!--섹션 3 오른쪽-->
-			<div class="item_box">
-				<div class="card"> <!--상품-->
-					<div class="product_img">
-						<img src="../images/sub/sub3_s3_product1.png" alt="제품">
-						<img src="../images/sub/sub3_s3_new_product_icon.png" alt="신제품" class="new">
-					</div>
-					<div class="product_text">
-						<p>Carrot Rose Serum</p><p>￦300.00</p>
-					</div>
-				</div> <!--상품-->
-				<div class="card"> <!--상품-->
-					<div class="product_img">
-						<img src="../images/sub/sub3_s3_product2.png" alt="제품">
-					</div>
-					<div class="product_text">
-						<p>Carrot Rose Serum</p><p>￦300.00</p>
-					</div>
-				</div> <!--상품-->
-				<div class="card"> <!--상품-->
-					<div class="product_img">
-						<img src="../images/sub/sub3_s3_product3.png" alt="제품">
-					</div>
-					<div class="product_text">
-						<p>Carrot Rose Serum</p><p>￦300.00</p>
-					</div>
-				</div> <!--상품-->
-				<div class="card"> <!--상품-->
-					<div class="product_img">
-						<img src="../images/sub/sub3_s3_product4.png" alt="제품">
-					</div>
-					<div class="product_text">
-						<p>Carrot Rose Serum</p><p>￦300.00</p>
-					</div>
-				</div> <!--상품-->
-				<div class="card"> <!--상품-->
-					<div class="product_img">
-						<img src="../images/sub/sub3_s3_product5.png" alt="제품">
-					</div>
-					<div class="product_text">
-						<p>Carrot Rose Serum</p><p>￦300.00</p>
-					</div>
-				</div> <!--상품-->
-				<div class="card"> <!--상품-->
-					<div class="product_img">
-						<img src="../images/sub/sub3_s3_product6.png" alt="제품">
-					</div>
-					<div class="product_text">
-						<p>Carrot Rose Serum</p><p>￦300.00</p>
-					</div>
-				</div> <!--상품-->
-				<div class="card"> <!--상품-->
-					<div class="product_img">
-						<img src="../images/sub/sub3_s3_product7.png" alt="제품">
-					</div>
-					<div class="product_text">
-						<p>Carrot Rose Serum</p><p>￦300.00</p>
-					</div>
-				</div> <!--상품-->
-				<div class="card"> <!--상품-->
-					<div class="product_img">
-						<img src="../images/sub/sub3_s3_product8.png" alt="제품">
-					</div>
-					<div class="product_text">
-						<p>Carrot Rose Serum</p><p>￦300.00</p>
-					</div>
-				</div> <!--상품-->
-				<div class="card"> <!--상품-->
-					<div class="product_img">
-						<img src="../images/sub/sub3_s3_product9.png" alt="제품">
-					</div>
-					<div class="product_text">
-						<p>Carrot Rose Serum</p><p>￦300.00</p>
-					</div>
-				</div> <!--상품-->
-			</div>
-	
-		</div>
-	
+#section1_inner{
+  width: 1320px;
+  margin: auto;
+}
 
-	</div>
-	
-	<!-- 제이쿼리 -->
-	<script src="../js/main.js"></script>
+.section1_left{ /*섹션1 왼쪽*/
+float: left;
+width: 216px;
+padding: 207px 0 0 68px;
 
-	<script>
-		const items = document.querySelectorAll('.question');
+}
 
-		function openCloseAnswer() {
-			const answerId = this.id.replace('que', 'ans');
 
-			if (document.getElementById(answerId).style.display === 'block') {
-				document.getElementById(answerId).style.display = 'none';
-				document.getElementById(this.id + '-toggle').textContent = '+';
-			} else {
-				document.getElementById(answerId).style.display = 'block';
-				document.getElementById(this.id + '-toggle').textContent = '=';
-			}
-		}
+.s1_right{ /*섹션1 오른쪽*/
+  background: url(../images/sub/sub3_s1_treeicon.png) no-repeat 37.5% 13%;
+  position: relative; /*기준*/
+  width: 1036px;
+  float: right;
+}
 
-		items.forEach(item => item.addEventListener('click', openCloseAnswer));
-	</script>
-	<!-- 제이쿼리 -->
+.s1_center_img{
+  width: 379px;
+  height: 559px;
+  border: 0.8px solid #ECECEC;
+  padding: 20px;
+  border-radius: 211px;
+}
+
+.s1_big_title{
+  position: absolute; 
+  font-size: 100px;
+  width: 544px;
+  height: 290px;
+  top: 50%;
+  left: -65%;
+  line-height: 100px;
+  font-weight: 100;
+}
+
+.s1_right_left{
+  position: absolute;
+  width: 422px;
+    top: 188px;
+    left: 174px
+}
+
+.s1_center_title{
+  position: absolute;
+    bottom: 35px;
+    left: 200px;
+    width: 400px;
+    background: url(../images/sub/sub3_s1_22icon.png) no-repeat 100% bottom;
+    opacity: 0.9;
+}
+
+.s1_right_right{
+  float: right;
+  height: 863px;
+  width: 300px;
+  background: url(../images/sub/sub3_s1_right.png) no-repeat 30% 50% ;
+}
+
+.s1_rr_text{
+  width: 190px;
+  height: 300px;
+  position: absolute;
+  top: 260px;
+  right: 195px;
+  font-size: 20px;
+}
+
+.right_icon{
+padding-top: 108px;
+}
+
+i{
+  color: #EFEC78;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+}
+
+.s1_rr_img{
+  position: absolute;
+  top: 57%;
+  right: 1%;
+}
 
 
 
 
+/* 섹션 2 */
+#section2{
+  width: 1320px;
+  height: 760px;
+  margin: auto;
+  color: #1C1A09;
+}
 
-	<div id="footer">
-		<!-- 푸터-->
-		<div class="footer_inner">
-			<div class="footer_left">
-				<ul>
-					<li><a href="../sub/sub1.html">ABOUT</a></li>
-					<li><a href="../sub/sub3.html">PRODUCT</a></li>
-					<li><a href="../sub/sub5.html">EVENT</a></li>
-					<li><a href="../sub/sub4.html">ACCOUNT</a></li>
-				</ul>
-			</div>
+.s2_symbol{
+ width: 170px;
+  padding: 100px 44%;
+}
 
-			<div class="footer_logo">
-				<a href="../index.html"><img src="../images/main/header_logo_bk.png" alt="푸터_로고"></a>
-			</div>
+hr{
+border: 1px solid #1C1A09;
+background-color: #1C1A09;
+}
 
-			<div class="sns">
-				<ul>
-					<li><a href="https://www.instagram.com/"><img src="../images/main/footer_insta.png" alt="인스타그램"></a>
-					</li>
-					<li><a href="https://ko-kr.facebook.com/"><img src="../images/main/footer_facebook.png"
-								alt="페이스북"></a></li>
-					<li><a href="https://twitter.com/?lang=ko"><img src="../images/main/footer_twitter.png"
-								alt="트위터"></a></li>
-					<li><a href="https://www.youtube.com/"><img src="../images/main/footer_youtube.png" alt="유튜브"></a>
-					</li>
-				</ul>
-			</div>
+.hr_top{
+  width: 1320px;
+}
 
-		</div>
-	</div>
+.s2_title{
+  font-size: 20px;
+  padding: 35px 0;
+  text-align: center;}
+  
+
+.hr_center{
+  width: 1200px;
+  margin: auto;
+}
+
+.s2_text{
+  position: relative;
+  text-align: center;
+  width: 1200px;
+  height: 305px;
+  margin: auto;
+padding: 57px 0;
+}
+
+.s2_left{
+  float: left;
+  width: 350px;
+  height: 297px;
+  border-right: 2px solid #1C1A09;
+}
+
+.s2_left img{
+  padding-top: 30px;
+}
+
+.s2_center{
+  width: 500px;
+  height: 297px;
+   float: left;
+  border-right: 2px solid #1C1A09; 
+}
+
+.s2_center p:nth-child(1){
+  font-size: 15px;
+  padding-top: 50px;
+}
+
+.s2_center p:nth-child(2){
+  font-size: 35px;
+   font-family: 'Lora', serif;
+   font-weight: 400;
+   padding: 30px 0;
+}
+
+.s2_center p:nth-child(3){
+  font-size: 12px;
+
+}
+
+.s2_right{
+    position: absolute;
+    width: 350px;
+    top: 100px;
+    right: -35px;
+}
 
 
-</body>
 
-</html>
+/* 섹션 3 */
+/* 왼쪽 메뉴 접었다 폈다.*/
+#section3{
+ width: 1320px;
+ height: 1360px;
+ margin: auto;
+}
+
+#section3_left{
+  width: 200px;
+  float: left;
+}
+
+.s3_title{ /* 섹션3 큰 타이틀 */
+  padding: 130px 0 90px 0;
+  text-align: center;
+}
+
+
+ .answer {
+    display: none;
+    padding-bottom: 20px;
+  }
+ 
+  .faq-content {
+    width: 170px ;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .category2{
+    width: 200px ;
+    padding-top: 20px;
+ }
+
+  /* 카테고리 글자 꾸미기 */
+  .filters_text {
+    font-size: 26px;
+    color: #171717;
+  }
+
+  .category_text p{
+    float: left;
+  }
+
+  .category_text p:nth-child(1){
+    font-size: 19px;
+    padding-right: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .category_text p:nth-child(2){
+    font-size: 12px;
+    font-family: 'Noto Serif KR', serif;
+  }
+
+  .category_check{padding-top: 30px;}
+  
+  .question {
+    font-size: 26px;
+    padding:  0 0px 20px 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .question:hover {
+    color: #889355;
+  }
+  [id$="-toggle"] {
+    margin-left: 80px;
+  }
+
+
+/* 체크리스트 */
+.checkbox_container
+{
+    height: 30px;
+    line-height: 30px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 40px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    /* #Bug: Cross Browser */
+    user-select: none;
+    font-size: 13px;
+    font-weight: 400;
+}
+.checkbox_container .checkbox_mark
+{
+   width: 20px;
+    height: 20px;
+    top: 4px;
+    left: 0;
+    position: absolute;
+    background-color: #eeeeee;
+     /* #Bug: Cross Browser */
+    border-radius: 23px;
+}
+.checkbox_container:hover input ~ .checkbox_mark
+{
+    background-color: #cccccc;
+}
+.checkbox_container input:checked ~ .checkbox_mark
+{
+    background-color: #BC9778;
+}
+.checkbox_container input
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.checkbox_container .checkbox_mark:after
+{
+    display: none;
+    content: "";
+    /*
+    position: absolute;
+    */
+    position: relative;
+}
+.checkbox_container input:checked ~ .checkbox_mark:after
+{
+    display: block;
+}
+.checkbox_container .checkbox_mark:after
+{
+    width: 3px;
+    height: 7px;
+    top: 4px;
+    left: 8px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 2px 2px 0;
+    /* #Bug: Cross Browser */
+    /*
+    transform: rotate(405deg);
+    */
+    transform: rotate(45deg);
+}
+
+
+
+/* 상품 리스트 */
+#section3_right{
+  width: 915px;
+  float: left;
+  padding-left: 21px;
+}
+#section3_right .item_box{
+  display: flex;
+  flex-wrap: wrap;/* 상위요소의 너비보다 하위요소의 너비가 크면 줄바꿈 */
+  justify-content: space-between;
+  position: relative;
+}
+
+#section3_right .item_box .card{
+  border: 1px solid #171717;  /*테두리 색상*/
+  height: 330px;
+  width: 285px;
+  margin-bottom: 25px;
+}
+
+.product_img{
+  height: 287px;
+  width: 285px;
+  border-bottom: 1px solid;
+}
+
+.product_text{padding-top: 8px;}
+
+.product_text:hover{
+ color: #BC9778;
+}
+
+.product_text p:nth-child(1){
+  font-size: 14px;
+  float: left;
+  padding: 0 80px 0 16px;
+}
+
+.product_text p:nth-child(2){
+  font-size: 12px;
+}
+
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}
+
+.new{
+  position: absolute;
+  top: 27px;
+  left: 24px;
+  animation: blink-effect 1s step-end infinite;
+}
+/* 깜빡이는 효과 - Blink Effect */
+
+
+
+
+
+
+/* 푸터 */
+#footer {
+    margin-top: 132px;
+    border-top: 1px solid #EEEEEE;
+    text-align: center;
+  }
+  
+  .footer_inner {
+    width: 1320px;
+    height: 138px;
+    margin: auto;
+    padding: 30px 0 0 40px;
+    box-sizing: border-box;
+  }
+  
+  .footer_left {
+    width: 529px;
+    float: left;
+  }
+  
+  .footer_left li {
+    float: left;
+    padding: 11px 0px 30px 40px;
+  }
+  
+  .footer_logo {
+    width: 142px;
+    float: left;
+  }
+  
+  .footer_left li a {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .sns {
+    width: 260px;
+    float: right;
+  }
+  
+  .sns li {
+    float: left;
+    padding: 13px 0 50px 30px;
+    opacity: 0.4;
+  }
+  
+  .sns li:hover {
+    opacity: 0.8;
+  }

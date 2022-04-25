@@ -171,11 +171,10 @@ h1 {
 }
 
 .s1_leaf {
-  position: absolute;
-  width: 100%;
- bottom: 70px;
- left: 400px;
-  
+position: absolute;
+bottom: 70px;
+left: 400px;
+right: 0;
 }
 
 

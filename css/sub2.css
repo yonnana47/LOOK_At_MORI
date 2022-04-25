@@ -128,10 +128,12 @@ h1 {
 
 /* 섹션1 */
 #section1{
-  width: 100%;
-  padding-top: 77px;
+  width: 1320px;
+  margin: auto;
+  height: 503px;
+    padding-top: 126px;
   border-bottom: 2.5px solid #d8d8d8;
-  border-top: 2.5px solid #d8d8d8;}
+}
 
 .s1_inner{
   margin: auto;
@@ -143,14 +145,13 @@ h1 {
   width: 485px;
   height: 506px;
   float: left;
-  border-right: 2.5px solid #d8d8d8;
+ 
 }
 
 .s1_middle{
   height: 507px;
   float: left;
   width: 487px;
-  border-right: 2.5px solid #d8d8d8;
 padding-left: 50px;
 }
 

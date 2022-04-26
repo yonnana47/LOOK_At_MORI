@@ -67,7 +67,7 @@ h1 {
 
 .header_inner a:nth-child(-n+3):hover,
 .header_inner a:nth-child(n+5):hover {
-  color: #d1c1ac;
+  color: #B6A58E;
 
 }
 
@@ -115,8 +115,7 @@ height: 100px;
 }
 
 .submenu li a:hover {
-  color: #d1c1ac;
-
+  color: #B6A58E;
 }
 
 
@@ -128,13 +127,13 @@ height: 100px;
   margin: auto;
   height: 432px;
   padding-top: 121px;
-  border-bottom: 1px solid #d8d8d8;
 }
 
 .s1_inner{
     margin: auto;
     width: 1320px;
-    height: 433px;
+    height: 432px;
+    border-bottom: 1px solid #bdbec1;
 }
 
 .s1_left{
@@ -142,8 +141,8 @@ width: 415.5px;
  height: 433px;
     box-sizing: border-box;
     float: left;
-    border-top: 1px solid #d8d8d8;
-    border-right: 1px solid #d8d8d8;
+    border-top: 1px solid #bdbec1;
+    border-right: 1px solid #bdbec1;
 }
 
 .s1_middle{
@@ -152,14 +151,14 @@ height: 432px;
     width: 581px;
     padding-left: 54px;
     box-sizing: border-box;
-    border-top: 1px solid #d8d8d8;
+    border-top: 1px solid #bdbec1;
 }
 
 .s1_right{
   width: 321px;
   height: 433px;
     float: left;
-    border-left: 1px solid #d8d8d8;
+    border-left: 1px solid #bdbec1;
 }
 
 
@@ -189,12 +188,11 @@ height: 432px;
 .frm{
   padding: 40px 0 0 0;
   float: left;
-  color: #554d44;
 }
 
 #usernumber{
   margin: 7px;
-  border: 1px #c8c8c8 solid;
+  border: 1px #979797 solid;
   padding: 4px;
   font-family: 'Noto Serif KR', serif;
 font-weight: 800;
@@ -202,7 +200,7 @@ font-weight: 800;
 
 .cart{
   padding: 10px 3px 10px 29px;
-  border: 1px #c8c8c8 solid;
+  border: 1px #979797 solid;
   display: inline-block;
   width: 133px;
   margin: 30px 0 0 60px;
@@ -214,6 +212,10 @@ font-weight: 800;
   color: #554d44;
   padding: 10px;
 
+}
+
+.cart:hover{
+  border: 1px #B6A58E solid;
 }
 
 .cart a:hover{
@@ -321,7 +323,6 @@ text-align: center;}
     font-family:  'Lora', serif;
     font-size: 26px;
     text-align: center;
-    color: #38291d;
   }
 
   .s5_img{
@@ -332,11 +333,11 @@ text-align: center;}
     width: 202px;
     padding: 0 0 10px 0px;
     margin-left: 30px;
-    border-bottom: 4px solid #674D38;
+    border-bottom: 4px solid #796d60;
   }
 
   #section5 img:hover{
-    border-bottom: 4px solid #A78B6F;
+    border-bottom: 4px solid #B6A58E;
   }
 
   
@@ -387,12 +388,6 @@ text-align: center;}
       font-size: 12px;
       font-weight: 600;
     }
-
-    
-.footer_left li a:hover{
-  color:#A78B6F;
-}
-
     
     .sns {
       width: 260px;

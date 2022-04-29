@@ -401,12 +401,11 @@ padding: 20px 0 0 17px;
 }
 
 .s4_right{
-  width: 800px;
-  position: absolute;
-  right: -12.5%;
-  opacity: 0.8;
+    width: 480px;
+    position: absolute;
+    right: 11.6%;
+    opacity: 0.8;
 }
-
 .s4_right img{
   width: 502px;
   opacity: 0.9;

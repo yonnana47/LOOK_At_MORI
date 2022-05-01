@@ -147,26 +147,6 @@
     position: relative;
 }
 
-.s1_inner p:nth-child(1){
-    width: 147px;
-    font-size: 18px;
-    border-top: 2px solid #4A614F;
-    border-bottom: 2px solid #4A614F;
-    position: absolute;
-    top: 512px;
-    left: 881px;
-    padding: 8px 0;
-}
-
-.s1_inner p:nth-child(2){
-    font-size: 50px;
-    position: absolute;
-    top: 53%;
-    left: 44.3%;
-    width: 240px;
-    line-height: 60px;
-    font-weight: 700;
-}
 
 
 /* 섹션2 */

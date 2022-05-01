@@ -148,14 +148,14 @@
 }
 
 .s1_inner p:nth-child(1){
-    width: 150px;
+    width: 147px;
     font-size: 18px;
     border-top: 2px solid #4A614F;
     border-bottom: 2px solid #4A614F;
     position: absolute;
-    top: 47%;
-    left: 46.3%;
-    padding: 5px 0;
+    top: 512px;
+    left: 881px;
+    padding: 8px 0;
 }
 
 .s1_inner p:nth-child(2){

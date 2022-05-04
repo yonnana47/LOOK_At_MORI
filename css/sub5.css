@@ -184,9 +184,9 @@
 /* 섹션3 */
 #section3{
     width: 1320px;
-   height: 1100px;
+   height: 1150px;
     margin: auto;
-    padding-top: 140px;
+    padding-top: 160px;
     background: url(../images/sub/sub5_s3.png) no-repeat center 65%;
     text-align: center;
 }
@@ -218,7 +218,7 @@ button {
   font-family: inherit;
 }
 button.learn-more {
-    margin: 800px 0 0 0;
+    margin: 870px 0 0 0;
     font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
@@ -276,7 +276,7 @@ button.learn-more a:hover{
   
   /* 푸터 */
   #footer {
-      margin-top: 30px;
+      margin-top: 110px;
       border-top: 1px solid #ededed;
       text-align: center;
     }

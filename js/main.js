@@ -1,4 +1,4 @@
-
+  //header
 $(document).ready(function(){ 
 
   // Header scroll class
@@ -10,9 +10,9 @@ $(document).ready(function(){
     }
   })
 
+	
+	
   //submenu
-
-
 			//.submenu_wrap 숨긴다.
 			$(".submenu_wrap").hide();
 			//#gnb li에 마우스를 올리면,

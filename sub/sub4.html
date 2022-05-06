@@ -1,34 +1,390 @@
-// sub4_QnA_메뉴탭
+<!DOCTYPE html>
+<html lang="ko">
 
-$(function(){
-	$(".h").hide();
-	var acc = document.getElementsByClassName("accordion");
-	var i;
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1320">
+	<title>LOOK At MORI</title>
 
-	for (i = 0; i < acc.length; i++) {
-	  acc[i].addEventListener("click", function() {
-		this.classList.toggle("active");
-		var panel = this.nextElementSibling;
-		if (panel.style.maxHeight) {
-		  panel.style.maxHeight = null;
-		} else {
-		  panel.style.maxHeight = panel.scrollHeight + "px";
-		} 
-	  });
-	}
+	<!-- 파비콘 -->
+	<link rel="icon" type="image/png" sizes="32x32" href="../images/main/favicon.png">
 
-});
+	<!-- css  -->
+	<link href="../css/sub4.css" rel="stylesheet" type="text/css">
 
-function openBoard(evt, boardName) {
-	  var i, x, tablinks;
-	  x = document.getElementsByClassName("board");
-	  for (i = 0; i < x.length; i++) {
-		x[i].style.display = "none";
-	  }
-	  tablinks = document.getElementsByClassName("tablink");
-	  for (i = 0; i < x.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" opacity", "");
-	  }
-	  document.getElementById(boardName).style.display = "block";
-	  evt.currentTarget.className += " opacity";
-}
+	<!-- 제이쿼리 -->
+	<script src="../js/jquery-1.12.4.min.js"></script>
+    <!-- tab 제이쿼리 -->
+    <script src="../js/tab_script.js"></script>
+
+	<!-- 헤더 제이쿼리: 마우스 스크롤하면 헤더 바탕 전환 & 서브 내려오게 하기 -->
+	<script src="../js/main.js"></script>
+
+	<!-- 헤더 검색폼 -->
+	<link rel="stylesheet" href="../css/search_form.css">
+
+
+	<!-- <<폰트 ↓>> -->
+	<!-- 내용; 프리텐다드 -->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+
+	<!-- 메인 영어; Source Sans Pro-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+		rel="stylesheet">
+
+	<!-- 메인 한국어; Noto Serif Korean -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- 포인트 영어; Lora -->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+	</style>
+</head>
+
+<body>
+	<div id="header">
+		<!-- 헤더 전체 -->
+		<div class="header_inner">
+			<ul>
+				<li><a href="../sub/sub1.html">MORI</a></li>
+				<li><a href="../sub/sub2.html#section3">YOUR DAYS</a></li>
+				<li><a href="../sub/sub3.html">PRODUCTS</a></li>
+				<li>
+					<h1><a href="../index.html"><img src="../images/main/header_logo_bk.png" alt="헤더로고_블랙"></a></h1>
+				</li>
+				<li><a href="../sub/sub5.html">ARCHIVE</a></li>
+				<li><a href="../sub/sub4.html">COMMUNITY</a></li>
+				<li class="search-form" style="padding: 34px 0 0 19px;">
+					<!-- 검색 아이콘 -->
+					<a href="#"></a>
+				</li>
+			</ul>
+		</div>
+		<div class="submenu_wrap">
+			<!--서브메뉴-->
+			<div class="submenu">
+				<div class="submenu_inner">
+					<div class="sub_left">
+						<ul>
+							<li><a href="../sub/sub1.html#section3">BRAND</a></li>
+						</ul>
+						<ul>
+							<li><a href="../sub/sub2.html">NEW PRODUCT</a></li>
+						</ul>
+						<ul>
+							<li><a href="../sub/sub3.html#section3">STORE</a></li>
+						</ul>
+					</div>
+					<div class="sub_right">
+						<ul>
+							<li><a href="../sub/sub5.html#section3">EVENT</a></li>
+						</ul>
+						<ul>
+							<li><a href="../sub/sub4.html#section2">FAQ</a></li>
+							<li><a href="../sub/sub4.html#section4">찾아오시는길</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--서브메뉴-->
+	</div>
+
+	
+
+	
+<div id="section1"><!-- 섹션1-->
+<div class="s1_left">
+ <p>Contact us anytime</p>
+ <p>상담가능 시간: 평일 09:00~18:00 (점심시간 12:00~13:00)<br>
+		토/일요일,공휴일 휴무
+ </p>
+</div>
+
+<div class="s1_right">
+	<img src="../images/sub/sub4_s1_main_img.png" alt="섹션1메인이미지">
+	<div class="s1_category">
+	<a href="../sub/sub5.html"><p>Event</p></a>
+	<a href="../sub/sub3.html"><p>Shop</p></a>
+	<a href="../sub/sub1.html"><p>Brand</p></a>
+	<a href="../index.html"><p>Home</p></a>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="section2"><!-- 섹션2 -->
+	<div id="s2_icon">
+			<ul id="box1">
+				<li	class="tap tablink opacity" onclick="openBoard(event,'Board01')"><img src="../images/sub/sub4_s2_icon1_off.png" alt="아이콘"></li>
+				<li	class="tap tablink" onclick="openBoard(event,'Board02')"><img src="../images/sub/sub4_s2_icon2_off.png" alt="아이콘"></li>
+				<li	class="tap tablink" onclick="openBoard(event,'Board03')"><img src="../images/sub/sub4_s2_icon3_off.png" alt="아이콘"></li>
+				<li	class="tap tablink" onclick="openBoard(event,'Board04')"><img src="../images/sub/sub4_s2_icon4_off.png" alt="아이콘"></li>
+				<li	class="tap tablink" onclick="openBoard(event,'Board05')"><img src="../images/sub/sub4_s2_icon5_off.png" alt="아이콘"></li>
+			</ul>
+</div>
+    <div id="Board01" class="s2_inner board">
+		<!-- 회원정보 -->
+        <div class="s2_title"><p>회원정보</p></div> 
+            <div class="faq_wrap">						
+                <div class="s2_faq">
+                    <div class="q_inner">
+                    <p>회원 탈퇴를 하고 싶은데 어떻게 하나요?</p></div>
+                    <div class="a_inner">
+                        <p>회원 탈퇴는 로그인 후 ‘마이페이지'를 클릭하시고 들어가서 ‘회원 정보 변경 안내’ 안의 ‘회원 탈퇴’를 누르면 됩니다.</p></div>
+                </div>
+                
+                <div class="s2_faq">
+                    <div class="q_inner">
+                    <p>회원 정보를 변경하고 싶은데 어떻게 하죠?</p></div>
+                    <div class="a_inner">
+                        <p>회원 정보 변경은 홈 페이지 상단에 있는 메뉴 중 ‘마이페이지'를 클릭하시고 들어가서<br>
+                            ‘회원 정보 변경 안내’ 안의 ‘회원 정보 변경’을 클릭하면 됩니다.</p></div>
+                </div>
+                
+                <div class="s2_faq">
+                    <div class="q_inner">
+                    <p>회원가입은 어떻게 하고 회원이 되면 무슨 혜택이 있나요?</p></div>
+                    <div class="a_inner">
+                        <p>회원가입은 홈페이지의 상단에 있는 ‘회원 가입’ 버튼을 누르고
+                            서비스 이용약관에 동의하신 후 고객님의 정보를 입력해 주시면 됩니다.
+                            <br>
+                            가입 시 상품 구매 사용후기 작성 등의 활동을 통해 적립금을 받을 수 있으며
+                            이는 상품 구입시 현금처럼 사용이 가능합니다. <br>
+                            또한 룩앳모리의 모든 서비스를 받을 수 있으며
+                            신제품 소개 테마별 제품의 정보를 이메일로 받아보실 수 있습니다.
+                            </p></div>
+                </div>
+            </div>
+    </div>
+    <div id="Board02" class="s2_inner board h">
+		<!-- 배송 문의 -->
+        <div class="s2_title"><p>배송 문의</p></div>
+            <div class="faq_wrap">
+                <div class="s2_faq">
+                    <div class="q_inner">
+                    <p>배송조회 어떻게 하나요?</p></div>
+                    <div class="a_inner">
+                        <p>로그인 후 [마이페이지- 주문/배송- 주문번호 클릭- 배송추적]을 클릭하시면 배송 정보를 확인하실 수 있습니다. <br>
+                            배송 조회는 배송중 단계 이후 확인하실 수 있습니다.</p></div>
+                </div>
+                
+                <div class="s2_faq">
+                    <div class="q_inner">
+                    <p>주문하면 배송은 언제 되나요?</p></div>
+                    <div class="a_inner">
+                        <p>주문하신 제품은 결제완료 후 평균 2~3영업일 (주말, 공휴일 제외) 이내 택배사를 통해 배송됩니다. <br>
+                            단, 도서산간 지역 등은 1~2영업일 추가 소요될 수 있으며 연휴 및 세일 기간, 일시품절 발생 등 주문량이 많을 경우에는<br>
+                            배송이 더 지연될 수 있는 점 양해 부탁드립니다.</p></div>
+                </div>
+                
+                <div class="s2_faq">
+                    <div class="q_inner">
+                    <p>배송이 안되는 지역이 있나요?</p></div>
+                    <div class="a_inner">
+                        <p>현재, 국내배송만 가능합니다. <br>
+                            배송지가 군 부대의 경우, 군 부대 특성상 배송이 불가능할 수 있습니다. <br>
+                            또한 출입이 제한되고 물품 위탁이 불가능한 곳(예: 기숙사 등)일 경우에도 배송이 불가능할 수 있습니다.
+                            </p></div>
+                </div>
+            </div>
+    </div>
+    <div id="Board03" class="s2_inner board h">
+		<!-- 주문 및 결제 -->
+        <div class="s2_title"><p>주문 및 결제</p></div>
+            <div class="faq_wrap">
+                <div class="s2_faq">
+                    <div class="q_inner">
+                    <p>주문 정보는 어디에서 확인할 수 있나요?</p></div>
+                    <div class="a_inner">
+                        <p>로그인 후 쇼핑몰 우측 상단의 [마이페이지 - 주문조회 - 주문/배송]에서 해당 주문번호를 클릭하시면<br>
+                            주문 정보와 배송 상태 확인이 가능합니다.</p></div>
+                </div>
+                
+                <div class="s2_faq">
+                    <div class="q_inner">
+                    <p>비회원도 주문이 가능한가요?</p></div>
+                    <div class="a_inner">
+                        <p>룩앳모리서는 회원 가입 후 주문하실 수 있습니다. <br>
+                            회원가입하지 않을 경우 주문 관리가 어려워 배송을 해 드릴 수 없습니다.
+                            무엇보다 쇼핑몰 이용에 보다 나은 서비스를 제공하기 위함이오니 이 점 많은 양해 부탁드리겠습니다.</p></div>
+                </div>
+                
+                <div class="s2_faq">
+                    <div class="q_inner">
+                    <p>결제는 어떻게 하나요?</p></div>
+                    <div class="a_inner">
+                        <p>신용카드, 실시간 계좌이체, 무통장입금(가상계좌), 휴대폰결제, 모바일 상품권, 카카오페이, 적립금 결제 방법이 있습니다. <br>
+                            적립금을 이용한 결제 시 다른 결제 수단과 함께 결제하실 수 있습니다.
+                            </p></div>
+                </div>
+            </div>
+    </div>
+    <div id="Board04" class="s2_inner board h">
+			<!-- 구독 정보 -->
+        <div class="s2_title"><p>구독 정보</p></div>
+            <div class="faq_wrap">
+                <div class="s2_faq">
+                    <div class="q_inner">
+                    <p>룩앳모리의 정기구독 서비스를 설명해 주세요</p></div>
+                    <div class="a_inner">
+                        <p>룩앳모리의 정기구독 서비스는 2개월 주기로 맞춤화장품을 배송하는 서비스입니다. <br>
+                              2개월 사용 분량의 화장품이 자동 배송 되므로 편리하게 사용하실 수 있습니다. 
+                            (※ 2개월마다 피부 측정을 해주시면 배송 전 마지막 결과값이 블렌드온 앱에 자동 연동되어 현재 피부에 맞는 화장품이 배송됩니다.)</p></div>
+                </div>
+                
+                <div class="s2_faq">
+                    <div class="q_inner">
+                    <p>정기구독 혜택은 무엇이 있나요?</p></div>
+                    <div class="a_inner">
+                        <p>1년 구독계약 고객에게는 유전자 검사비용(290,000원), 피부 측정 마사지기(498,000원)과 SI Solution 분석서비스(240,000원)를<br>
+                            무료로 제공해 드립니다.</p></div>
+                </div>
+                
+                <div class="s2_faq">
+                    <div class="q_inner">
+                    <p>정기구독 결제방법에 대해 설명해 주세요.</p></div>
+                    <div class="a_inner">
+                        <p>웹이나 앱에서 룩앳모리 서비스 구독하기를 신청 후 결제하고, <br>
+                            첫 결제 후에는 매달 같은 일자에 지정해둔 카드에서 자동 결제가 이루어집니다. 
+                            </p></div>
+                </div>
+            </div>
+    </div>
+    <div id="Board05" class="s2_inner board h">
+		<!-- 기타 문의 -->
+        <div class="s2_title"><p>기타 문의</p></div>
+            <div class="faq_wrap">
+                <div class="s2_faq">
+                    <div class="q_inner">
+                    <p>룩액모리는 어떤점이 특별한가요?</p></div>
+                    <div class="a_inner">
+                        <p>선천적 요인을 확인할 수 있는 유전자 검사, 생활습관 및 환경에 대한 피부 설문, <br>
+                            현재의 피부 상태를 측정하여 변화되는 피부에 최적화된 제품을 편리하게 제공해 드리는 브랜드입니다. </p></div>
+                </div>
+                
+                <div class="s2_faq">
+                    <div class="q_inner">
+                    <p>질문 및 불만접수와 처리절차는 어떻게 되나요?</p></div>
+                    <div class="a_inner">
+                        <p>[1:1 고객문의]를 이용해주시거나, 룩앳모리 고객센터(070-4088-9477)로 연락주시면 상담 가능합니다.</p></div>
+                </div>
+                
+                <div class="s2_faq">
+                    <div class="q_inner">
+                    <p>상업성 광고 또는 홍보성 글의 임의 삭제 기준은 무엇인가요?</p></div>
+                    <div class="a_inner">
+                        <p>게시판 성격과 다른 글들이 올라오는 경우, 룩앳모리에서는 바로 삭제 조치합니다. <br>
+    
+                            폭언, 욕설 등 게시판의 성격과 맞지 않는 내용일 경우 즉시 삭제 조치할 수 있으며, <br>
+                            글을 게시한 해당 회원에 대해서는 강제 회원탈퇴 및 법적 대응 등 별도 조치를 취할 수 있습니다.
+                            
+                            이 점 양지하시기 바랍니다.
+                            </p></div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<div id="section3"> <!--섹션3-->
+	<div class="s3_title">
+		<img src="../images/sub/sub4_s3_text.png" alt="섹션3_타이틀"></div>
+	<div class="s3_text">	
+		<p>매장 방문전 예약하면 신속한 상담가능합니다</p>
+		<p>방문 상담하시면 샤워볼 제공 <br>
+			기  간 : 2022년 4월 24일 ~ 5월 24일   
+		</p>
+		<div class="btn-holder"><a href="../sub/sub1.html#section4">
+			<button class="btn btn-4 hover-border-6">
+			  <span >CLIK ON ME</span>
+			</button></a></div>
+	</div>
+</div>
+
+
+
+<div id="section4"><!--섹션4-->
+	<div class="s4_left">
+			<img src="../images/sub/sub4_s4_logo.png" alt="로고">
+			<div class="s4_text">
+			<p>070-4088-9477</p>
+			<p>3 Myeongnyun-ro, Yeonje-gu, Busan</p></div>
+			
+			<button class="map_btn map_btn-1"><a href="https://map.naver.com/v5/search/%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%97%B0%EC%A0%9C%EA%B5%AC%20%EB%AA%85%EB%A5%9C%EB%A1%9C%203/address/14369256.438347023,4190615.8000566736,%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%97%B0%EC%A0%9C%EA%B5%AC%20%EB%AA%85%EB%A5%9C%EB%A1%9C%203,new?c=14369173.2938194,4190623.7146694,19,0,0,0,dh">MAP 바로 가기</a></button>
+	</div>
+	<div class="s4_right">
+		<img src="../images/sub/sub4_s4_map.png" alt="지도">
+	</div>
+	<div class="wrap"><!--지도표시애니매이션-->
+		<a href="https://map.naver.com/v5/search/%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%97%B0%EC%A0%9C%EA%B5%AC%20%EB%AA%85%EB%A5%9C%EB%A1%9C%203/address/14369256.438347023,4190615.8000566736,%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%97%B0%EC%A0%9C%EA%B5%AC%20%EB%AA%85%EB%A5%9C%EB%A1%9C%203,new?c=14369173.2938194,4190623.7146694,19,0,0,0,dh">
+		<img src="../images/sub/sub4_s4_animation.png" class="chatbox"></a>
+	</div>
+</div>
+
+
+
+<div id="section5"><!-- 섹션5 -->
+	<div class="s5_btn">
+	<ul>
+			<li><img src="../images/sub/sub4_s5_left_leaf.png" alt="왼쪽 잎"></li>
+			<li><a href="../sub/sub1.html">LOOK At <br>
+				MORI란?</a></li>
+			<li><a href="../sub/sub3.html">제품 <br>
+				구매하기</a></li>
+			<li><a href="../sub/sub5.html#section3">이벤트 <br>
+				참여하기</a></li>
+			<li><img src="../images/sub/sub4_s5_right_leaf.png" alt="오른쪽 잎"></li>
+	</ul>
+	</div>
+	
+</div>
+
+
+
+
+	<div id="footer">
+		<!-- 푸터-->
+		<div class="footer_inner">
+			<div class="footer_left">
+				<ul>
+					<li><a href="../sub/sub1.html#section3">ABOUT</a></li>
+					<li><a href="../sub/sub3.html#section3">PRODUCT</a></li>
+					<li><a href="../sub/sub5.html#section3">EVENT</a></li>
+					<li><a href="../sub/sub1.html#section4">ACCOUNT</a></li>
+				</ul>
+			</div>
+
+			<div class="footer_logo">
+				<a href="../index.html"><img src="../images/main/header_logo_bk.png" alt="푸터_로고"></a>
+			</div>
+
+			<div class="sns">
+				<ul>
+					<li><a href="https://www.instagram.com/"><img src="../images/main/footer_insta.png" alt="인스타그램"></a>
+					</li>
+					<li><a href="https://ko-kr.facebook.com/"><img src="../images/main/footer_facebook.png"
+								alt="페이스북"></a></li>
+					<li><a href="https://twitter.com/?lang=ko"><img src="../images/main/footer_twitter.png"
+								alt="트위터"></a></li>
+					<li><a href="https://www.youtube.com/"><img src="../images/main/footer_youtube.png" alt="유튜브"></a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+
+</body>
+
+</html>

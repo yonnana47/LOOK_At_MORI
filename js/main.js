@@ -30,7 +30,7 @@ $(document).ready(function(){
  });
 
 
-//서브 3
+//서브 3_섹션2_right
 $('.show_img').show();//show 사진 보여주기
   $(".hide_img").hide();//hide 사진 숨기기
 

@@ -1,6 +1,7 @@
 // sub4_QnA_메뉴탭
+
 $(function(){
-	
+	$(".h").hide();
 	var acc = document.getElementsByClassName("accordion");
 	var i;
 

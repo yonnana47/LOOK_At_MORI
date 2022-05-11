@@ -37,6 +37,7 @@
   transform: rotate(30deg);
 }
 
+
 .search-form a:focus {
   width: 120px;
   -moz-transition-property: width;
@@ -77,8 +78,9 @@
 }
 
 .search-form a:hover{
-  border: 3px solid #9e8169c2;
+  border: 3px solid #c9a68aaf;
 }
+
 .search-form a::before:hover{
-   background: #9e8169c2;
+  background: #9e8169c2;
 }

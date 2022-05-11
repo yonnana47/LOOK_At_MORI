@@ -128,26 +128,6 @@ h1 {
 #section1 {
   height: 644px;
   width: 100%;
-  background: url(../images/main/main_section1_img.jpg) no-repeat center top;
-  background-size: cover;
-  text-align: center;
-}
-
-.section1_title {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: rgb(255, 255, 255);
-  font-size: 80px;
-}
-
-.section1_text {
-  color: #7c5f47;
-  font-size: 18px;
-  padding-top: 472px;
-  font-weight: 600;
-}
-
-.section1_subtitle {
-  padding-top: 42px;
 }
 
 
